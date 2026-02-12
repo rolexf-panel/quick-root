@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Root Runner</string>
+    <string name="no_commands">Belum ada perintah</string>
+    <string name="create_new">Buat Baru</string>
+    <string name="import_json">Impor JSON</string>
+    <string name="add_command">Tambah Perintah</string>
+    <string name="add_cmd_desc">Buat perintah manual atau impor dari file JSON?</string>
+    <string name="new_command_title">Perintah Baru</string>
+    <string name="label_name">Nama</string>
+    <string name="label_script">Perintah Shell</string>
+    <string name="btn_save_finish">Simpan &amp; Selesai</string>
+    <string name="btn_create_another">Buat Lagi</string>
+    <string name="btn_cancel">Batal</string>
+    <string name="import_config_title">Impor Konfigurasi</string>
+    <string name="import_config_desc">Apakah Anda ingin menimpa perintah yang ada atau menambahkannya?</string>
+    <string name="btn_append">Tambahkan</string>
+    <string name="btn_overwrite">Timpa</string>
+    <string name="export_title">Ekspor Konfigurasi</string>
+    <string name="preview_json">Pratinjau JSON:</string>
+    <string name="btn_export_download">Ekspor ke Unduhan</string>
+    <string name="msg_exec_success">Dijalankan: %s</string>
+    <string name="msg_export_success">Diekspor ke Downloads/quickroot/</string>
+    <string name="msg_export_fail">Gagal Ekspor: %s</string>
+    <string name="msg_json_error">Gagal membaca JSON</string>
+    <string name="msg_appended">Perintah Ditambahkan</string>
+    <string name="msg_overwritten">Konfigurasi Ditimpa</string>
+</resources>

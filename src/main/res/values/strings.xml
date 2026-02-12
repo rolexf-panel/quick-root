@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Root Runner</string>
+    <string name="no_commands">No commands yet</string>
+    <string name="create_new">Create New</string>
+    <string name="import_json">Import JSON</string>
+    <string name="add_command">Add Command</string>
+    <string name="add_cmd_desc">Create a new command manually or import from a JSON file?</string>
+    <string name="new_command_title">New Command</string>
+    <string name="label_name">Name</string>
+    <string name="label_script">Shell Command</string>
+    <string name="btn_save_finish">Save &amp; Finish</string>
+    <string name="btn_create_another">Create Another</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="import_config_title">Import Configuration</string>
+    <string name="import_config_desc">Do you want to overwrite existing commands or append the new ones?</string>
+    <string name="btn_append">Append</string>
+    <string name="btn_overwrite">Overwrite</string>
+    <string name="export_title">Export Configuration</string>
+    <string name="preview_json">Preview JSON:</string>
+    <string name="btn_export_download">Export to Downloads</string>
+    <string name="msg_exec_success">Executed: %s</string>
+    <string name="msg_export_success">Exported to Downloads/quickroot/</string>
+    <string name="msg_export_fail">Export Failed: %s</string>
+    <string name="msg_json_error">Failed to parse JSON</string>
+    <string name="msg_appended">Commands Appended</string>
+    <string name="msg_overwritten">Configuration Overwritten</string>
+</resources>
