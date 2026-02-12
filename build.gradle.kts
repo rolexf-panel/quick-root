@@ -1,6 +1,7 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    // Versi wajib ditulis di sini karena struktur project flat
+    id("com.android.application") version "8.2.2"
+    id("org.jetbrains.kotlin.android") version "1.9.22"
 }
 
 android {
@@ -13,12 +14,35 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
+
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+    }
+
+    // PENTING: Karena tidak ada folder 'app', kita arahkan manual
+    sourceSets {
+        getByName("main") {
+            manifest.srcFile("src/main/AndroidManifest.xml")
+            java.srcDirs("src/main/java")
+            res.srcDirs("src/main/res")
+        }
     }
 
     buildTypes {
-        getByName("release") {
+        release {
             isMinifyEnabled = false
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
     }
 
     buildFeatures {
@@ -27,10 +51,6 @@ android {
 
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
-    }
-
-    kotlinOptions {
-        jvmTarget = "17"
     }
 }
 
@@ -44,7 +64,7 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.material:material-icons-extended")
     
-    // Root & JSON logic
+    // Root & JSON Logic
     implementation("com.github.topjohnwu.libsu:core:5.2.1")
     implementation("com.google.code.gson:gson:2.10.1")
 }
