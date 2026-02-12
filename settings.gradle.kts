@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "RootRunner"
-// Jangan ada include(":app") di sini
+rootProject.name = "QuickRoot"
+// Kosongkan bagian include karena file build ada di root
