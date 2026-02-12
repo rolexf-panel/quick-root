@@ -14,12 +14,23 @@ android {
         versionCode = 1
         versionName = "1.0"
     }
-    
+
+    buildTypes {
+        getByName("release") {
+            isMinifyEnabled = false
+        }
+    }
+
     buildFeatures {
         compose = true
     }
+
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
 
@@ -31,8 +42,9 @@ dependencies {
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.material3:material3")
-    implementation("androidx.compose.material:material-icons-extended") // Untuk ikon tambahan
-    // LibSU (Root) & Gson (JSON)
+    implementation("androidx.compose.material:material-icons-extended")
+    
+    // Root & JSON logic
     implementation("com.github.topjohnwu.libsu:core:5.2.1")
     implementation("com.google.code.gson:gson:2.10.1")
 }
